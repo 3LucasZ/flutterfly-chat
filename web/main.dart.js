@@ -34138,7 +34138,7 @@ b=q}}C.b.n(k.b,b,a)}}
 F.BB.prototype={
 P:function(a,b){return new S.rU(new D.rO(null),"Flask Flutter Websockets",X.acU(null,C.fE),null)}}
 F.kA.prototype={
-aI:function(){var s=A.al3(P.a82("ws://192.168.1.144:5000"),null)
+aI:function(){var s=A.al3(P.a82("wss://192.168.1.144:5000"),null)
 return new F.FR(s,new D.uV(C.kL,new P.b3(t.V)),C.m)}}
 F.FR.prototype={
 P:function(a,b){var s=this,r=null,q=E.aaq(L.hs(J.mr(s.a.c,"'s chat"),r,r,r,r,r,r)),p=s.d.f.gvl(),o=t.fQ
