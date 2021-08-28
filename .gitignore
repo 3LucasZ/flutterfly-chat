@@ -1,2 +1,7 @@
-
+.DS_Store
+env
 web/assets/NOTICES
+.vscode
+.last_build_id
+test-python-client.py
+startup.bash
