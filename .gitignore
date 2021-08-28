@@ -6,3 +6,4 @@ web/assets/NOTICES
 test-python-client.py
 startup.bash
 __pycache__
+autobuild.bash

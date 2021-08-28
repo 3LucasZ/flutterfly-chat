@@ -1,0 +1,3 @@
+MODE: local
+SOCKET_SERVER: wss://flutterfly-chat.herokuapp.com/
+HTTP_SERVER: https://3lucasz.github.io/flutterfly-chat/web/
