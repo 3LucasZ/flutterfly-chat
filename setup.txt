@@ -1,6 +1,11 @@
+HEROKU PORT
 export PORT=5000
 echo $PORT
+
+CLIENT WEBSOCKET CHANNEL
 aI:function(){var s=A.al3(P.a82("wss://flutterfly-chat.herokuapp.com/"),null)
+
+CLIENT BASE PATH
 <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -13,3 +18,8 @@ aI:function(){var s=A.al3(P.a82("wss://flutterfly-chat.herokuapp.com/"),null)
   -->
   <base href="/">
   /flutterfly-chat/web/
+
+CONFIG YAML
+MODE: local
+SOCKET_SERVER: wss://flutterfly-chat.herokuapp.com/
+HTTP_SERVER: https://3lucasz.github.io/flutterfly-chat/web/index.html
