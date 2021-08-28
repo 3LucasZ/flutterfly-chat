@@ -4,12 +4,11 @@ import os
 import json
 import sys
 
-#import ssl
-
+#OPTIONAL CONFIG
 #use os to get ip and remove /n
-serverIP = os.popen('ipconfig getifaddr en0').read()[:-1]
+#serverIP = os.popen('ipconfig getifaddr en0').read()[:-1]
 #serverIP = 'localhost'
-port = 5000
+#port = 5000
 
 #app state
 tilesDict = {
@@ -53,15 +52,12 @@ async def connection_handler(websocket, path):
                 print("A user disconnected")
         for user in usersToRemove:
             users.remove(user)
-        
-#wss (secure version of ws)
-#ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
 
 if __name__ == '__main__':
     try:
-        start_server = websockets.serve(connection_handler, serverIP, port)
+        start_server = websockets.serve(connection_handler, "", int(os.environ["PORT"]))
         asyncio.get_event_loop().run_until_complete(start_server)
-        print("Running on: " + serverIP + ':' + str(port))
+        #print("Running on: " + serverIP + ':' + str(port))
         asyncio.get_event_loop().run_forever()
     except KeyboardInterrupt:
         sys.exit()

@@ -5,3 +5,4 @@ web/assets/NOTICES
 .last_build_id
 test-python-client.py
 startup.bash
+__pycache__
